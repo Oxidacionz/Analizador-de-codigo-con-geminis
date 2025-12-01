@@ -1,0 +1,5 @@
+{
+  "name": "Project Analyzer",
+  "description": "Herramienta avanzada para analizar estructuras de proyectos (ZIP/GitHub) con IA.",
+  "requestFramePermissions": []
+}

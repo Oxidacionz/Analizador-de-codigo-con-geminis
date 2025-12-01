@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Analyzer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              google: {
+                blue: '#1a73e8',
+                gray: '#3c4043',
+                dark: '#202124',
+                surface: '#303134'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html, body, #root {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+      body {
+        background-color: #1e1e1e;
+        color: #e8eaed;
+      }
+      /* Custom Scrollbar for Studio feel */
+      ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #202124; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #444746; 
+        border-radius: 5px;
+        border: 2px solid #202124;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #5f6368; 
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+          width: 8px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0",
+    "jszip": "https://aistudiocdn.com/jszip@^3.10.1",
+    "react-syntax-highlighter/": "https://aistudiocdn.com/react-syntax-highlighter@^16.1.0/",
+    "react-syntax-highlighter": "https://aistudiocdn.com/react-syntax-highlighter@^16.1.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
